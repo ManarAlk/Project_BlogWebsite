@@ -1,0 +1,23 @@
+{% extends "master.html" %}
+
+{% block title %}
+Comments
+{% endblock %}
+
+{% block content %}
+
+<h1>Comments</h1>
+
+<ul>
+
+{% for x in comments %}
+
+    <li>{{ x.blog.title }} - {{ x.content }}</li>
+
+{% endfor %}
+
+</ul>
+
+<a href="/">← Back to Home</a>
+
+{% endblock %}

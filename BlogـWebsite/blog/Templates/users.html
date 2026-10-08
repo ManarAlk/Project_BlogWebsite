@@ -1,0 +1,25 @@
+{% extends "master.html" %}
+
+{% block title %}
+Users
+{% endblock %}
+
+{% block content %}
+
+<h1>Users</h1>
+
+<ul>
+
+{% for x in users %}
+
+    <li>
+        {{ x.username }} - {{ x.email }}
+    </li>
+
+{% endfor %}
+
+</ul>
+
+  <a href="/">← Back to Home</a>
+
+{% endblock %}
